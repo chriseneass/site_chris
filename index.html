@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christiane Enéas Silva - Data Governance & Architecture Leader">
+    <title>Christiane Enéas Silva | Data Governance Leader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40">
+                            <path d="M20 2L36 12V28L20 38L4 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="6" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <span>Christiane Silva</span>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link" data-translate="nav_home">Home</a>
+                    <a href="#about" class="nav-link" data-translate="nav_about">About</a>
+                    <a href="#experience" class="nav-link" data-translate="nav_experience">Experience</a>
+                    <a href="#expertise" class="nav-link" data-translate="nav_expertise">Expertise</a>
+                    <a href="#projects" class="nav-link" data-translate="nav_projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a>
+                </div>
+
+                <div class="nav-actions">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="setLanguage('pt-br')">BR</button>
+                        <button class="lang-btn" onclick="setLanguage('pt-pt')">PT</button>
+                    </div>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-label">
+                        <span class="pulse-dot"></span>
+                        <span data-translate="hero_available">Available for Strategic Consulting</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="line" data-translate="hero_title1">Data Governance &</span>
+                        <span class="line gradient" data-translate="hero_title2">Architecture Leader</span>
+                    </h1>
+                    <p class="hero-text" data-translate="hero_subtitle">
+                        Transforming enterprise data ecosystems through strategic governance, advanced architecture, 
+                        and AI-driven innovation. 13+ years driving digital transformation across global organizations.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-translate="hero_cta1">Start a Conversation</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <span data-translate="hero_cta2">View Case Studies</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-num" data-count="13">0+</div>
+                            <div class="stat-label" data-translate="hero_stat1">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="50">0+</div>
+                            <div class="stat-label" data-translate="hero_stat2">Enterprise Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num" data-count="8">0</div>
+                            <div class="stat-label" data-translate="hero_stat3">Industry Sectors</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrap">
+                        <div class="image-border"></div>
+                        <img src="1764959133661_image.png" alt="Christiane Enéas Silva">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span data-translate="hero_scroll">Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-translate="about_badge">About Me</span>
+                <h2 class="title" data-translate="about_title">Strategic Data Leadership for Digital Excellence</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-blocks">
+                    <div class="block">
+                        <div class="block-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h3 data-translate="about_mission_title">Mission & Vision</h3>
+                        <p data-translate="about_mission_text">I believe in the transformative power of strong, diverse teams united by purpose to achieve extraordinary outcomes. With deep passion for leveraging data as a strategic asset, I help organizations build robust governance frameworks.</p>
+                    </div>
+                    <div class="block">
+                        <div class="block-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h3 data-translate="about_approach_title">Professional Approach</h3>
+                        <p data-translate="about_approach_text">My expertise spans enterprise data architecture, data lake design, master data management, and regulatory compliance (GDPR/LGPD). I specialize in implementing federated governance models.</p>
+                    </div>
+                    <div class="block">
+                        <div class="block-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <h3 data-translate="about_impact_title">Impact & Philosophy</h3>
+                        <p data-translate="about_impact_text">Throughout my career, I've driven digital transformation across steel, oil & gas, finance, insurance, and technology sectors. Effective data governance isn't about barriers—it's about enabling real value.</p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="num">01</span>
+                        <h4 data-translate="about_feature1_title">Strategic Focus</h4>
+                        <p data-translate="about_feature1_text">Aligning data governance with business objectives</p>
+                    </div>
+                    <div class="feature">
+                        <span class="num">02</span>
+                        <h4 data-translate="about_feature2_title">Technical Excellence</h4>
+                        <p data-translate="about_feature2_text">Modern architectures: Data Lake, Data Mesh, Data Vault</p>
+                    </div>
+                    <div class="feature">
+                        <span class="num">03</span>
+                        <h4 data-translate="about_feature3_title">Global Experience</h4>
+                        <p data-translate="about_feature3_text">Cross-functional leadership across continents</p>
+                    </div>
+                    <div class="feature">
+                        <span class="num">04</span>
+                        <h4 data-translate="about_feature4_title">Knowledge Sharing</h4>
+                        <p data-translate="about_feature4_text">Training teams and building data-driven cultures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-translate="exp_badge">Career Journey</span>
+                <h2 class="title" data-translate="exp_title">13+ Years of Data Excellence</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="date">2025 - Present</span>
+                            <span class="badge-sm">Current</span>
+                        </div>
+                        <h3>Leader Enterprise Data Architect</h3>
+                        <h4>IO TECNOLOGIA | São Paulo, Brazil</h4>
+                        <ul>
+                            <li>Leading enterprise data strategy with semantic modeling</li>
+                            <li>Data Lake, Data Mesh, Data Vault architectures</li>
+                            <li>HL7 FHIR extension mCODE® for healthcare</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Data Strategy</span>
+                            <span>Modern Architecture</span>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="date">2024 - 2025</span>
+                        </div>
+                        <h3>Data Governance Specialist</h3>
+                        <h4>Keyrus @ Bayer | Brazil</h4>
+                        <ul>
+                            <li>Technical Leader for AWS Platform (Raw/Silver layers)</li>
+                            <li>Data Catalog and Corporate Common Model</li>
+                            <li>Data strategy for digital customer journey</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Agriculture</span>
+                            <span>AWS</span>
+                            <span>Corporate Model</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="date">2023 - 2024</span>
+                        </div>
+                        <h3>Data Governance Technical Lead</h3>
+                        <h4>Elumini @ Prudential | Brazil</h4>
+                        <ul>
+                            <li>Corporate Data Model and Domain Architecture</li>
+                            <li>Data Lake with security for customer data</li>
+                            <li>Digital customer journey solutions</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Insurance</span>
+                            <span>Data Lake</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="card-top">
+                            <span class="date">2021 - 2023</span>
+                        </div>
+                        <h3>Data Governance Leader</h3>
+                        <h4>Furukawa Electric LatAm | Curitiba</h4>
+                        <ul>
+                            <li>Enterprise Common Model structuring</li>
+                            <li>Data Architecture Domains</li>
+                            <li>Heterogeneous data integration</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Telecommunications</span>
+                            <span>Enterprise Model</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-translate="exp_badge">Core Competencies</span>
+                <h2 class="title" data-translate="exp_title">Technical Expertise & Services</h2>
+            </div>
+            <div class="expertise-grid">
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>Data Governance Strategy</h3>
+                    <p>Enterprise frameworks aligned with business objectives. DAMA implementations and federated governance.</p>
+                    <ul>
+                        <li>DAMA Framework</li>
+                        <li>Federated Governance</li>
+                        <li>Policy Development</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/><rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>Modern Data Architecture</h3>
+                    <p>Scalable architectures: Data Lake, Data Mesh, Data Vault 2.0, Lakehouse on AWS and Azure.</p>
+                    <ul>
+                        <li>Data Lake & Lakehouse</li>
+                        <li>Data Mesh</li>
+                        <li>Cloud Architecture</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.89 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M14 2V8H20" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>Metadata & Data Catalog</h3>
+                    <p>Active metadata management with automated lineage. Data catalog enabling discovery and semantic layers.</p>
+                    <ul>
+                        <li>Data Catalog</li>
+                        <li>Data Lineage</li>
+                        <li>Business Glossary</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>Data Quality Management</h3>
+                    <p>Comprehensive frameworks with profiling, standardization, validation and automated monitoring.</p>
+                    <ul>
+                        <li>Data Profiling</li>
+                        <li>Quality Rules</li>
+                        <li>Automated Monitoring</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 16V12" stroke="currentColor" stroke-width="2" fill="none"/><path d="M12 8H12.01" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>GDPR & LGPD Compliance</h3>
+                    <p>Privacy-by-design ensuring regulatory compliance. Data discovery, assessments, lifecycle management.</p>
+                    <ul>
+                        <li>Privacy Assessments</li>
+                        <li>Data Classification</li>
+                        <li>Lifecycle Management</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                    </div>
+                    <h3>Master Data Management</h3>
+                    <p>Enterprise MDM strategies with modeling and governance. Corporate Common Model and domain-driven design.</p>
+                    <ul>
+                        <li>Corporate Model</li>
+                        <li>Data Matching</li>
+                        <li>Domain-Driven Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="tech-stack">
+                <h3 data-translate="tech_title">Technology Stack</h3>
+                <div class="stack-grid">
+                    <div>
+                        <h4 data-translate="tech_cloud">Cloud Platforms</h4>
+                        <div class="pills">
+                            <span>AWS</span><span>Azure</span><span>Databricks</span><span>Snowflake</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 data-translate="tech_tools">Data Tools</h4>
+                        <div class="pills">
+                            <span>Informatica</span><span>Oracle</span><span>SAS</span><span>PostgreSQL</span><span>MySQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 data-translate="tech_frameworks">Frameworks</h4>
+                        <div class="pills">
+                            <span>DAMA-DMBOK</span><span>PPDM</span><span>HL7 FHIR</span><span>mCODE®</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 data-translate="tech_methods">Methodologies</h4>
+                        <div class="pills">
+                            <span>Data Vault 2.0</span><span>Agile</span><span>Lean</span><span>DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-head">
+                <span class="badge" data-translate="proj_badge">Portfolio</span>
+                <h2 class="title" data-translate="proj_title">Success Stories & Case Studies</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="proj-card">
+                    <div class="proj-visual">
+                        <div class="proj-icon">
+                            <svg viewBox="0 0 24 24"><path d="M19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21Z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <span class="badge-sm">Healthcare</span>
+                    </div>
+                    <h3>Healthcare Data Platform Modernization</h3>
+                    <p>Implemented modern architecture with HL7 FHIR standards, enabling interoperability and compliance across integrated healthcare systems.</p>
+                    <div class="tags"><span>HL7 FHIR</span><span>Data Lake</span><span>Azure</span></div>
+                    <div class="metrics">
+                        <div><span>40%</span><small>Efficiency Gain</small></div>
+                        <div><span>100%</span><small>Compliance</small></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-visual">
+                        <div class="proj-icon">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" fill="none"/><path d="M3 9H21" stroke="currentColor" stroke-width="2" fill="none"/><path d="M9 21V9" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <span class="badge-sm">Insurance</span>
+                    </div>
+                    <h3>Enterprise Data Governance Program</h3>
+                    <p>Established comprehensive governance framework based on DAMA principles, implementing quality management and regulatory compliance.</p>
+                    <div class="tags"><span>DAMA</span><span>Data Quality</span><span>MDM</span></div>
+                    <div class="metrics">
+                        <div><span>60%</span><small>Quality Improvement</small></div>
+                        <div><span>25%</span><small>Cost Reduction</small></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-visual">
+                        <div class="proj-icon">
+                            <svg viewBox="0 0 24 24"><path d="M21 16V8C20.9996 7.64927 20.9071 7.30481 20.7315 7.00116C20.556 6.69751 20.3037 6.44536 20 6.27L13 2.27C12.696 2.09446 12.3511 2.00205 12 2.00205C11.6489 2.00205 11.304 2.09446 11 2.27L4 6.27C3.69626 6.44536 3.44398 6.69751 3.26846 7.00116C3.09294 7.30481 3.00036 7.64927 3 8V16C3.00036 16.3507 3.09294 16.6952 3.26846 16.9988C3.44398 17.3025 3.69626 17.5546 4 17.73L11 21.73C11.304 21.9055 11.6489 21.9979 12 21.9979C12.3511 21.9979 12.696 21.9055 13 21.73L20 17.73C20.3037 17.5546 20.556 17.3025 20.7315 16.9988C20.9071 16.6952 20.9996 16.3507 21 16Z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <span class="badge-sm">AgTech</span>
+                    </div>
+                    <h3>Agribusiness Data Lake Implementation</h3>
+                    <p>Designed AWS-based data lake with federated governance, enabling advanced analytics for precision agriculture.</p>
+                    <div class="tags"><span>AWS</span><span>Data Lake</span><span>Analytics</span></div>
+                    <div class="metrics">
+                        <div><span>3x</span><small>Data Accessibility</small></div>
+                        <div><span>50%</span><small>Faster Insights</small></div>
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-visual">
+                        <div class="proj-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" fill="none"/><path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                        </div>
+                        <span class="badge-sm">Oil & Gas</span>
+                    </div>
+                    <h3>PPDM Global Standards Implementation</h3>
+                    <p>First Latin American PPDM implementation for integrated database, establishing global best practices for E&P data management.</p>
+                    <div class="tags"><span>PPDM</span><span>International</span><span>E&P</span></div>
+                    <div class="metrics">
+                        <div><span>100%</span><small>Standards Compliance</small></div>
+                        <div><span>80%</span><small>Data Integration</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="badge" data-translate="contact_badge">Let's Connect</span>
+                    <h2 class="title" data-translate="contact_title">Ready to Transform Your Data Strategy?</h2>
+                    <p data-translate="contact_text">Whether you're looking to implement data governance, modernize your architecture, or ensure regulatory compliance, I'm here to help guide your transformation journey.</p>
+                    
+                    <div class="contact-items">
+                        <a href="mailto:christiane.eneas.silva@gmail.com" class="contact-item">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                            </div>
+                            <div>
+                                <span class="label">Email</span>
+                                <span class="value">christiane.eneas.silva@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+351931462944" class="contact-item">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5864 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                            </div>
+                            <div>
+                                <span class="label">Phone</span>
+                                <span class="value">+351 931 462 944</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                            </div>
+                            <div>
+                                <span class="label">Location</span>
+                                <span class="value">Cascais, Lisbon, Portugal</span>
+                            </div>
+                        </div>
+                        <a href="https://linkedin.com/in/christianeeneassilva" target="_blank" class="contact-item">
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24"><path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" fill="none"/><path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                            </div>
+                            <div>
+                                <span class="label">LinkedIn</span>
+                                <span class="value">christianeeneassilva</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="Portfolio Contact">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+                        
+                        <div class="form-field">
+                            <label for="name"><span data-translate="form_name">Name</span> *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email"><span data-translate="form_email">Email</span> *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="company" data-translate="form_company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-field">
+                            <label for="message"><span data-translate="form_message">Message</span> *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span data-translate="form_submit">Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 40 40"><path d="M20 2L36 12V28L20 38L4 28V12L20 2Z" stroke="currentColor" stroke-width="2" fill="none"/><circle cx="20" cy="20" r="6" fill="currentColor"/></svg>
+                    </div>
+                    <p data-translate="footer_tagline">Data Governance & Architecture Leader</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/christianeeneassilva" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    </a>
+                    <a href="mailto:christiane.eneas.silva@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Christiane Enéas Silva. <span data-translate="footer_rights">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
